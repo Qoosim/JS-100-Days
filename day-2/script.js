@@ -7,3 +7,5 @@ const generateRandomNumber = () => {
 }
 
 generate.addEventListener('click', generateRandomNumber);
+
+generateRandomNumber();
