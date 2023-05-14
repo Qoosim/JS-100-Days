@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap');
+
+:root {
+  --white: #fff;
+  --black: #1c2b2d;
+  --blue: #31326f;
+  --light-blue: #005490;
+  --color-primary: #9d0191;
+  --color-secondary: #db6400;
+  --grey: #eee;
+  --dark-grey: #222831;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+p {
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+img {
+  width: 100%;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.count-div {
+  width: 450px;
+  text-align: center;
+  background-color: #005490;
+  padding: 1.2rem;
+  border-radius: 5px;
+  color: var(--grey);
+}
+
+.count-div > * {
+  font-size: 2.5rem;
+  text-transform: capitalize;
+  margin: 1.6rem 0;
+}
+
+.count-div h2 {
+  color: var(--grey);
+}
+
+.count {
+  padding: 1rem 1rem;
+  border: 1px solid #888686;
+}
+
+.buttons button {
+  text-transform: capitalize;
+  font-weight: 700;
+  color: var(--white);
+  padding: 1rem;
+  margin: 0 1rem;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button.generate {
+  background-color: var(--grey);
+  color: var(--dark-grey);
+  font-size: 2rem;
+}
