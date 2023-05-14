@@ -1,23 +1,22 @@
 const count = document.querySelector('.count');
-const subtract = document.querySelector('.subtract');
-const add = document.querySelector('.add');
-const resetCount = document.querySelector('.reset');
+const buttons = document.querySelector('.buttons');
 
+buttons.addEventListener('click', (e) => {
 
-subtract.addEventListener('click', () => {
-  count.innerHTML--;
-  setColor();
+  if (e.target.classList.contains('subtract')) {
+    count.innerHTML--;
+    setColor();
+  }
+  if (e.target.classList.contains('add')) {
+    count.innerHTML++;
+    setColor();
+  }
+  if (e.target.classList.contains('reset')) {
+    count.innerHTML = 0;
+    setColor();
+  }
 })
 
-add.addEventListener('click', () => {
-  count.innerHTML++;
-  setColor();
-})
-
-resetCount.addEventListener('click', () => {
-  count.innerHTML = 0;
-  setColor();
-})
 
 function setColor () {
   if (count.innerHTML > 0) {
