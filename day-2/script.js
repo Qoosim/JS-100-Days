@@ -1,11 +1,12 @@
-const count = document.querySelector('.count');
-const generate = document.querySelector('.generate');
+const number = document.querySelector('.count');
+const btn = document.querySelector('.generate');
 
-const generateRandomNumber = () => {
-  const randomNumber = Math.floor(Math.random() * 10) + 1
-  count.innerHTML = randomNumber;
+const generateRandom = () => {
+  const randomNumber =  Math.floor(Math.random() * 10 + 1);
+  number.innerHTML = randomNumber;
 }
 
-generate.addEventListener('click', generateRandomNumber);
+btn.addEventListener('click', generateRandom);
 
-generateRandomNumber();
+generateRandom();
+
