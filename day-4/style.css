@@ -83,6 +83,7 @@ form button:hover {
 }
 
 .modal-content {
+  position: relative;
   width: 80%;
   max-width: 60rem;
   margin: 5% auto;
@@ -105,8 +106,8 @@ form button:hover {
 
 .close {
   position: absolute;
-  top: 80px;
-  right: 220px;
+  top: 0.5rem;
+  right: 2rem;
   color: var(--color-primary);
   cursor: pointer;
   font-size: 1.3rem;
