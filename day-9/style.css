@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap');
+
+:root {
+  --white: #fff;
+  --black: #1c2b2d;
+  --blue: #31326f;
+  --light-blue: #005490;
+  --color-primary: #9d0191;
+  --color-secondary: #db6400;
+  --grey: #eee;
+  --dark-grey: #222831;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+p {
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+
+section {
+  height: 100vh;
+  background-color: var(--light-blue);
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.calc {
+  width: 40rem;
+  margin: 0 auto;
+  background-color: var(--white);
+}
+
+h2 {
+  background-color: var(--color-secondary);
+  padding: 1rem;
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: var(--white);
+  text-align: center;
+}
+
+form, 
+form > * {
+  width: 90%;
+  margin: 0 auto;
+  padding: 1.2rem 0;
+  text-align: center;
+  font-size: 1.6rem;
+  border-bottom: 2px solid var(--color-primary);
+}
+
+form > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+input,
+select {
+  width: 20rem;
+  padding: 5px;
+  font-size: 1.6rem;
+  border-radius: 3px;
+  text-align: right;
+}
+
+.btn {
+  background-color: var(--color-primary);
+  outline: none;
+  border: none;
+  border-radius: 3px;
+  font-size: 2rem;
+  color: var(--white);
+  margin-top: 1rem;
+}
+
+.btn:hover {
+  background-color: var(--color-secondary);
+  color: var(--white);
+}
+
+.error {
+  display: none;
+  border: none;
+  color: red;
+}
+
+.result {
+  width: 90%;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.result > * {
+  font-size: 1.8rem;
+  font-weight: 700;
+  background-color: var(--grey);
+  padding: 1rem;
+}
+
+.total {
+  color: red;
+}
