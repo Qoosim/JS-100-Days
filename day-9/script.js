@@ -6,7 +6,7 @@ const btn = document.querySelector('.btn'),
   total = document.querySelector('.total');
 
 
-const hideResult = () => {
+const hideMessage = () => {
   setTimeout(() => {
     error.style.display = "none";
   }, 3000);
@@ -17,18 +17,18 @@ const calculateTip = (e) => {
 
   if (bill.value === "" || rate.value === "") {
     error.style.display = "block";
-    hideResult();
+    hideMessage();
   } else if (isNaN(bill.value)) {
-    error.innerHTML = "Please enter a number";
+    error.innerText = "Please enter a number";
     error.style.display = "block";
-    hideResult();
+    hideMessage();
   } else {
     let tipAmt = bill.value * rate.value;
     tipAmt = Math.ceil(tipAmt);
-    tip.innerHTML = `Tip: $${tipAmt}`;
+    tip.innerText = `Tip: $${tipAmt}`;
 
     let totalBill = +bill.value + tipAmt;
-    total.innerHTML = `Total Bill: $${totalBill}`;
+    total.innerText = `Total Bill: $${totalBill}`;
   }
 }
 

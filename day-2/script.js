@@ -5,7 +5,7 @@ generate.addEventListener('click', randomNumber);
 
 function randomNumber() {
   const randNumber = Math.floor(Math.random() * 10) + 1;
-  number.innerHTML = randNumber;
+  number.innerText = randNumber;
 }
 
 randomNumber();

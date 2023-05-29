@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgba(65,105,225, 1);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#content-container {
+  border: 2px solid #fff;
+  padding: 1.5rem 4rem;
+  border-radius: 5px;
+}
+
+#heading-items {
+  font-size: 2rem;
+  color: #fff;
+  font-weight: 700;
+}
+
+ul {
+  background-color: #fff;
+  text-align: center;
+  margin: 1rem;
+}
+
+li {
+  list-style: none;
+  border: 1px solid #ccc;
+  padding: 0.5rem;
+  font-size: 1.2rem;
+}

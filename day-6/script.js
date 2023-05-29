@@ -9,9 +9,9 @@ const copyText = (e) => {
   coupon.setSelectionRange(0, 999999);
   document.execCommand('copy');
 
-  btn.textContent = 'copied!!!';
+  btn.innerText = 'copied!!!';
   setTimeout(() => {
-    btn.textContent = 'copy'
+    btn.innerText = 'copy'
   }, 3000)
 }
 

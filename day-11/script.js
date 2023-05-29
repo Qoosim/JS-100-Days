@@ -4,10 +4,10 @@ const limit = document.querySelector('.limit');
 const max = 100;
 
 const updateLimit = () => {
-  limit.textContent = max;
+  limit.innerText = max;
   input.addEventListener('input', () => {
     let inputLength = input.value.length;
-    limit.textContent = max - inputLength
+    limit.innerText = max - inputLength
     if (inputLength > max) {
       btn.disabled = true;
       limit.style.color = 'red';

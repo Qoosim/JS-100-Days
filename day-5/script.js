@@ -13,10 +13,10 @@ function palindrome() {
 
   let flip = [...end].reverse().join("");
   if (start === flip) {
-    result.innerHTML = `${word} is a palindrome`;
+    result.innerText = `${word} is a palindrome`;
     timeOut();
   } else {
-    result.innerHTML = `${word} is NOT a palindrome`;
+    result.innerText = `${word} is NOT a palindrome`;
     timeOut();
   }
 
@@ -31,6 +31,6 @@ btn.addEventListener('click', (e) => {
 
 function timeOut() {
   setTimeout(() => {
-    result.innerHTML = '';
+    result.innerText = '';
   }, 3000)
 }

@@ -14,7 +14,7 @@ function checkVowels(event) {
       countVowel++;
     }
   }
-  result.innerHTML = `${word.value.toUpperCase()} has ${countVowel} vowels.`;
+  result.innerText = `${word.value.toUpperCase()} has ${countVowel} vowels.`;
   document.querySelector('.input-text').value = '';
   document.querySelector('.input-text').focus();
   timeOut();
@@ -22,6 +22,7 @@ function checkVowels(event) {
 
 function timeOut() {
   setTimeout(() => {
-    result.innerHTML = '';
+    result.innerText = '';
   }, 3000)
 }
+
