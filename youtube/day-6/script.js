@@ -1,26 +1,17 @@
-const word = document.querySelector('.input-text');
-const btn = document.querySelector('.check-btn');
-const result = document.querySelector('.result');
+const btn = document.querySelector('.text-btn');
+const coupon = document.querySelector('.coupon');
 
-btn.addEventListener('click', checkVowels);
+btn.addEventListener('click', textCopy);
 
-function checkVowels(e) {
-  e.preventDefault();
+function textCopy(event) {
+  event.preventDefault();
 
-  const wordValue = word.value.toLowerCase();
-  if (!wordValue) return;
-  let vowelCount = 0;
-  for (let i = 0; i < wordValue.length; i++) {
-    if (wordValue[i].match(/[a,e,i,o,u]/)) {
-      vowelCount++;
-    }
-  }
-  result.innerHTML = `${wordValue} has ${vowelCount} vowels`;
-  document.querySelector('.input-text').value = '';
-  document.querySelector('.input-text').focus();
-  setTimeout(timeOut, 3000);
-}
+  coupon.select();
+  coupon.setSelectionRange(0, 9999999999);
+  coupon.execCommand('copy');
+  btn.innerText = 'Copied!';
 
-function timeOut() {
-  result.innerHTML = '';
+  setTimeout(() => {
+    btn.innerText = 'Copy'
+  }, 3000);
 }
